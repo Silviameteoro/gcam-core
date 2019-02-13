@@ -16,7 +16,7 @@
 #' for unconventional oil resources.
 #' @importFrom assertthat assert_that
 #' @importFrom dplyr filter mutate select
-#' @importFrom tidyr gather spread
+#' @importFrom tidyr complete gather nesting replace_na spread
 #' @author BBL August 2017
 module_energy_LA111.rsrc_fos_Prod <- function(command, ...) {
   if(command == driver.DECLARE_INPUTS) {
@@ -134,6 +134,9 @@ module_energy_LA111.rsrc_fos_Prod <- function(command, ...) {
       L100.IEA_en_bal_ctry_hist %>%
         filter(FLOW == "INDPROD", PRODUCT %in% IEA_product_rsrc$PRODUCT) %>%
         gather_years %>%
+        # Fill out to all countries in IEA database. Important in case of GCAM regions w no historical rsrc production
+        complete(nesting(year, PRODUCT, FLOW), iso = sort(unique(L100.IEA_en_bal_ctry_hist$iso))) %>%
+        replace_na(list(value = 0)) %>%
         # bring in resource information and summarise
         left_join_error_no_match(IEA_product_rsrc, by = "PRODUCT") %>%
         group_by(iso, resource) %>%
