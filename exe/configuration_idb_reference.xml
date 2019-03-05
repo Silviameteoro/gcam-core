@@ -26,6 +26,9 @@
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
 		<!--Value name = "electricity">../input/gcamdata/xml/electricity.xml</Value-->
 		<!--<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>-->
+		<!--Add electricity_water file that has interpolation functions commented out for Colombia and Uruguay-->
+		<Value name = "electricity_water_nointerp">../input/gcamdata/xml/electricity_water_nointerp.xml</Value>
+
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
 		<Value name = "energy_distribution">../input/gcamdata/xml/en_distribution.xml</Value>
@@ -92,8 +95,7 @@
 		<Value name = "colombia_population">../input/idb/reference/socioeconomics_gSSP2_colombia_ref.xml</Value>
 		<Value name = "colombia_PrimEner_water_coeff">../input/idb/reference/L210.TechCoef_mod.xml</Value>
 		<Value name = "colombia_Industrial_water_coeff">../input/idb/reference/L232.TechCoef_mod.xml</Value>
-		<Value name = "colombia_irrig_water_coeff">../input/idb/L2072.AgCoef_IrrWaterWdraw_ag_mgmt_mod.xml</Value>
-		<Value name = "electricity_water_nointerp">../input/gcamdata/xml/electricity_water_nointerp.xml</Value>
+		<Value name = "colombia_irrig_water_coeff">../input/idb/reference/L2072.AgCoef_IrrWaterWdraw_ag_mgmt_mod2.xml</Value>
 		<!--Uruguay-specific files-->
 	
 		<!--Argentina-specific files-->
