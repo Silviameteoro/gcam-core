@@ -46,6 +46,24 @@ module_aglu_LB120.LC_GIS_R_LTgis_Yh_GLU <- function(command, ...) {
 
     # Perform computations
 
+    # 1/2/2017 modification - Uruguay (iso "ury") has no land allocated to forest in SAGE, but it has non-zero roundwood
+    # production. According to most inventories, about 8% of the land area of the country is forested, so the issue is
+    # assumed to be with SAGE, not with FAOSTAT. The largest land area types are pasture on grassland/steppe (land code 1022)
+    # and ;
+    # an exogenous portion of that is set instead to forest.
+    # FAOSTAT has between 18.5 and 21.5 bm2 of forested area from 1992 to 2010. The fraction below returns forested area
+    # consistent with this estimate
+    L100.ury_Grs_to_For_share <- 0.13
+    L100.ury_forest <- subset( L100.Land_type_area_ha, iso == "ury" & land_code %in% c(1002, 1022))
+    L100.ury_forest$land_code <- 502   # TemperateDeciduousForest/Woodland, Unmanaged, Non-protected
+    L100.ury_forest$value <- L100.ury_forest$value * L100.ury_Grs_to_For_share
+
+    L100.Land_type_area_ha$value[ L100.Land_type_area_ha$iso == "ury" & L100.Land_type_area_ha$land_code %in% c(1002, 1022)] <-
+      L100.Land_type_area_ha$value[ L100.Land_type_area_ha$iso == "ury" & L100.Land_type_area_ha$land_code %in% c(1002, 1022)] *
+      (1 - L100.ury_Grs_to_For_share)
+    L100.Land_type_area_ha <- rbind( L100.Land_type_area_ha, L100.ury_forest)
+
+
     land.type <-
         L100.Land_type_area_ha %>%
           ## Add data for GCAM region ID and GLU
