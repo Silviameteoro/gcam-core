@@ -25,10 +25,7 @@
 		<Value name = "energy_supply">../input/gcamdata/xml/en_supply.xml</Value>
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
 		<!--Value name = "electricity">../input/gcamdata/xml/electricity.xml</Value-->
-		<!--<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>-->
-		<!--Add electricity_water file that has interpolation functions commented out for Colombia and Uruguay-->
-		<Value name = "electricity_water_nointerp">../input/gcamdata/xml/electricity_water_nointerp.xml</Value>
-
+		<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
 		<Value name = "energy_distribution">../input/gcamdata/xml/en_distribution.xml</Value>
@@ -42,6 +39,7 @@
 		<Value name = "transportation">../input/gcamdata/xml/transportation_UCD_CORE.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
+
 
 		<Value name = "ag_base">../input/gcamdata/xml/ag_For_Past_bio_base_IRR_MGMT.xml</Value>
 		<Value name = "ag_cost">../input/gcamdata/xml/ag_cost_IRR_MGMT.xml</Value>
@@ -83,47 +81,7 @@
 		<Value name = "bio_elec_w_feed_limit">../input/gcamdata/xml/water_elec_liquids_limits.xml</Value>
 		<Value name = "bio_neg_emiss_budget">../input/gcamdata/xml/negative_emissions_budget_gSSP2.xml</Value>
 		<Value name = "solver">../input/solution/cal_broyden_config.xml</Value>
-
-		<!--Colombia-specific files-->
-	    <!-- Socio-Economics -->
-		<Value name = "colombia_population_gdp">../input/idb/reference/Colombia_refPopGDP_gSSP2.xml</Value>
-		<Value name = "bio_neg_emiss_budget_CO">../input/idb/reference/Colombia_refPopGDP_negative_emissions_budget_gSSP2.xml</Value>
-		<Value name = "demand_input_CO">../input/idb/reference/Colombia_refPopGDP_demand_input.xml</Value>
-		<Value name = "cement_income_elas_CO">../input/idb/reference/Colombia_refPopGDP_cement_incelas_gssp2.xml</Value>
-		<Value name = "industry_income_elas_CO">../input/idb/reference/Colombia_refPopGDP_industry_incelas_gssp2.xml</Value>
-        <!-- Electricity -->
-		<Value name = "colombia_ref_hydro">../input/idb/reference/Colombia_ref_hydro.xml</Value>
-		<Value name = "elec_tech_shareweight">../input/idb/reference/Colombia_ref_elec_shrwt.xml</Value>
-        <!-- Water-->
-		<Value name = "livestock_water_demand_coeff">../input/idb/reference/Colombia_ref_livestock_water_demand_coeff.xml</Value>
-		<Value name = "colombia_PrimEner_water_coeff">../input/idb/reference/Colombia_ref_L210.TechCoef_mod.xml</Value>
-		<Value name = "colombia_Industrial_water_coeff">../input/idb/reference/Colombia_ref_L232.TechCoef_mod.xml</Value>
-		<Value name = "colombia_irrig_water_coeff">../input/idb/reference/Colombia_ref_L2072.AgCoef_IrrWaterWdraw_ag_mgmt_mod2.xml</Value>
-		<!--Uruguay-specific files-->
-	    <!-- Socio-Economics -->
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_socioeconomics_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
-        <!-- Final Energy-->
-        <Value name = "Uruguay_refFinalNrg">../input/idb/reference/Uruguay_refFinalNrg.xml</Value>
-        <!-- Electricity -->
-        <Value name = "Uruguay_refElecShareWeights_ref">../input/idb/reference/Uruguay_refElecShareWeights_L223.SubsectorShrwt.xml</Value>
-        <Value name = "Uruguay_refElecShareWeights_ref">../input/idb/reference/Uruguay_refElecHydro.xml</Value>
-       <!-- Ag -->
-      <!--<Value name = "Uruguay_refAg_ref">../input/idb/reference/Uruguay_refAg.xml</Value>-->
-      <!-- Water-->
-      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWater.xml</Value>
-      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterCons_ag_mgmt.xml</Value>
-      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterWdraw_ag_mgmt.xml</Value>
-
-		<!--Argentina-specific files-->
-
-		<!--POLICY FILES
-
-                <Value name = "policy">../input/idb/policy/test_constraints_pia_MXCL2AGBRv4.xml</Value> 
-                <Value name = "policy">../input/idb/policy/test_ghg_link_pxa_MX_BR_ar5_LAar4_AR_CO_sar.xml</Value>
-		-->
+		
 		
 	</ScenarioComponents>
 	<Strings>
@@ -150,7 +108,7 @@
 		<Value name="carbon-output-start-year">1705</Value>
 		<Value name="climateOutputInterval">5</Value>
 		<Value name="parallel-grain-size">50</Value>
-		<Value name="stop-period">-1</Value>
+		<Value name="stop-period">11</Value>
 		<Value name="restart-period">-1</Value>
 	</Ints>
 	<Doubles>

@@ -3,7 +3,7 @@
 	<Files>
 		<Value name="xmlInputFileName">../input/gcamdata/xml/modeltime.xml</Value>
 		<Value name="BatchFileName">batch_ag.xml</Value>
-		<Value name="policy-target-file">../input/policy/forcing_target_4p5.xml</Value>
+		<Value name="policy-target-file">../input/policy/forcing_target_2p6_overshoot.xml</Value>
 		<Value name="GHGInputFileName">../input/magicc/inputs/input_gases.emk</Value>
 		<Value write-output="1" append-scenario-name="0" name="xmldb-location">../output/Reference/Reference</Value>
 		<Value write-output="1" append-scenario-name="0" name="restart">./restart/restart</Value>
@@ -42,6 +42,7 @@
 		<Value name = "transportation">../input/gcamdata/xml/transportation_UCD_CORE.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
+
 
 		<Value name = "ag_base">../input/gcamdata/xml/ag_For_Past_bio_base_IRR_MGMT.xml</Value>
 		<Value name = "ag_cost">../input/gcamdata/xml/ag_cost_IRR_MGMT.xml</Value>
@@ -84,50 +85,29 @@
 		<Value name = "bio_neg_emiss_budget">../input/gcamdata/xml/negative_emissions_budget_gSSP2.xml</Value>
 		<Value name = "solver">../input/solution/cal_broyden_config.xml</Value>
 
+		<!--add on files that represent IDB LAC Reference scenario-->
+		<!--GDP Recession-->		
+		<Value name = "LAC_recession_gdp">../input/idb/reference/socioeconomics_gSSP2_imf_recession_gcam44.xml</Value>
 		<!--Colombia-specific files-->
-	    <!-- Socio-Economics -->
-		<Value name = "colombia_population_gdp">../input/idb/reference/Colombia_refPopGDP_gSSP2.xml</Value>
-		<Value name = "bio_neg_emiss_budget_CO">../input/idb/reference/Colombia_refPopGDP_negative_emissions_budget_gSSP2.xml</Value>
-		<Value name = "demand_input_CO">../input/idb/reference/Colombia_refPopGDP_demand_input.xml</Value>
-		<Value name = "cement_income_elas_CO">../input/idb/reference/Colombia_refPopGDP_cement_incelas_gssp2.xml</Value>
-		<Value name = "industry_income_elas_CO">../input/idb/reference/Colombia_refPopGDP_industry_incelas_gssp2.xml</Value>
-        <!-- Electricity -->
-		<Value name = "colombia_ref_hydro">../input/idb/reference/Colombia_ref_hydro.xml</Value>
-		<Value name = "elec_tech_shareweight">../input/idb/reference/Colombia_ref_elec_shrwt.xml</Value>
-        <!-- Water-->
-		<Value name = "livestock_water_demand_coeff">../input/idb/reference/Colombia_ref_livestock_water_demand_coeff.xml</Value>
-		<Value name = "colombia_PrimEner_water_coeff">../input/idb/reference/Colombia_ref_L210.TechCoef_mod.xml</Value>
-		<Value name = "colombia_Industrial_water_coeff">../input/idb/reference/Colombia_ref_L232.TechCoef_mod.xml</Value>
-		<Value name = "colombia_irrig_water_coeff">../input/idb/reference/Colombia_ref_L2072.AgCoef_IrrWaterWdraw_ag_mgmt_mod2.xml</Value>
+		<Value name = "colombia_ref_hydro">../input/idb/reference/Colombia_reference_hydro.xml</Value>
+		<Value name = "elec_tech_shareweight">../input/idb/reference/Colombia_reference_elec_shrwt.xml</Value>
+		<Value name = "livestock_water_demand_coeff">../input/idb/reference/Colombia_reference_livestock_water_demand_coeff.xml</Value>
+		<Value name = "colombia_population">../input/idb/reference/socioeconomics_gSSP2_colombia_ref.xml</Value>
+		<Value name = "colombia_PrimEner_water_coeff">../input/idb/reference/L210.TechCoef_mod.xml</Value>
+		<Value name = "colombia_Industrial_water_coeff">../input/idb/reference/L232.TechCoef_mod.xml</Value>
+		<Value name = "colombia_irrig_water_coeff">../input/idb/reference/L2072.AgCoef_IrrWaterWdraw_ag_mgmt_mod2.xml</Value>
 		<!--Uruguay-specific files-->
-	    <!-- Socio-Economics -->
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_socioeconomics_gSSP2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
-        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
-        <!-- Final Energy-->
-        <Value name = "Uruguay_refFinalNrg">../input/idb/reference/Uruguay_refFinalNrg.xml</Value>
-        <!-- Electricity -->
-        <Value name = "Uruguay_refElecShareWeights_ref">../input/idb/reference/Uruguay_refElecShareWeights_L223.SubsectorShrwt.xml</Value>
-        <Value name = "Uruguay_refElecShareWeights_ref">../input/idb/reference/Uruguay_refElecHydro.xml</Value>
-       <!-- Ag -->
-      <!--<Value name = "Uruguay_refAg_ref">../input/idb/reference/Uruguay_refAg.xml</Value>-->
-      <!-- Water-->
-      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWater.xml</Value>
-      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterCons_ag_mgmt.xml</Value>
-      <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterWdraw_ag_mgmt.xml</Value>
-
+	
 		<!--Argentina-specific files-->
 
-		<!--POLICY FILES
+		<!--POLICY FILES-->
 
-                <Value name = "policy">../input/idb/policy/test_constraints_pia_MXCL2AGBRv4.xml</Value> 
-                <Value name = "policy">../input/idb/policy/test_ghg_link_pxa_MX_BR_ar5_LAar4_AR_CO_sar.xml</Value>
-		-->
+              <!-- To use the Forcing Target: -->
+        	<Value name="Carbon_Tax">../input/policy/carbon_tax_0.xml</Value>
 		
 	</ScenarioComponents>
 	<Strings>
-		<Value name="scenarioName">Reference</Value>
+		<Value name="scenarioName">remove_neg_emiss_rcp2p6</Value>
 		<Value name="debug-region">Colombia</Value>
 		<Value name="MAGICC-input-dir">../input/magicc/inputs</Value>
 		<Value name="MAGICC-output-dir">../output</Value>
@@ -135,7 +115,7 @@
 	<Bools>
 		<Value name="CalibrationActive">1</Value>
 		<Value name="BatchMode">0</Value>
-		<Value name="find-path">0</Value>
+		<Value name="find-path">1</Value>
 		<Value name="createCostCurve">0</Value>
 		<Value name="debugChecking">0</Value>
 		<Value name="simulActive">1</Value>
