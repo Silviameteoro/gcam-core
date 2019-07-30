@@ -25,9 +25,10 @@
 		<Value name = "energy_supply">../input/gcamdata/xml/en_supply.xml</Value>
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
 		<!--Value name = "electricity">../input/gcamdata/xml/electricity.xml</Value-->
-		<!--<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>-->
+		<Value name = "reduce_gasCC">../input/idb/reference/Colombia_ref_gas_cc_sw_interp.xml</Value>
+		<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>
 		<!--Add electricity_water file that has interpolation functions commented out for Colombia and Uruguay-->
-		<Value name = "electricity_water_nointerp">../input/gcamdata/xml/electricity_water_nointerp.xml</Value>
+		<!--<Value name = "electricity_water_nointerp">../input/gcamdata/xml/electricity_water_nointerp.xml</Value>-->
 
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
@@ -119,11 +120,19 @@
 
 		<!--Argentina-specific files-->
 
-		<!--POLICY FILES
+		<!--Climate Impacts Files-->
+      <Value name = "hydro">../input/idb/impacts/Hydro/hydro_impacts_IPSL-CM5A-LR_rcp6p0.xml</Value>
+      <Value name = "water">../input/idb/impacts/Water/runoff_impacts_IPSL-CM5A-LR_rcp6p0.xml</Value>
+      <!--<Value name = "water">../input/idb/impacts/Water/water_cc_hadgem_8p5_exp_wg.xml</Value>-->
+      <Value name = "ag">../input/idb/impacts/Ag/ag_prodchange_rcp6p0_ipsl_pdssat_SSP2.xml</Value>
 
-                <Value name = "policy">../input/idb/policy/test_constraints_pia_MXCL2AGBRv4.xml</Value> 
-                <Value name = "policy">../input/idb/policy/test_ghg_link_pxa_MX_BR_ar5_LAar4_AR_CO_sar.xml</Value>
-		-->
+		<!--POLICY FILES-->
+		<!--NDC-->
+                <!--<Value name = "policy">../input/idb/policy/test_constraints_pia_MXCL2AGBRv4.xml</Value>-->
+                <!--<Value name = "policy">../input/idb/policy/test_ghg_link_pxa_MX_BR_ar5_LAar4_AR_CO_sar.xml</Value>-->
+		<!--Protected Land increased to 95% for policy cases (will really only affect policy cases)-->
+                <Value name = "protected land">../input/idb/policy/protected_land_input_2.xml</Value>
+                <Value name = "protected land">../input/idb/policy/protected_land_input_3.xml</Value>
 		
 	</ScenarioComponents>
 	<Strings>
@@ -150,7 +159,7 @@
 		<Value name="carbon-output-start-year">1705</Value>
 		<Value name="climateOutputInterval">5</Value>
 		<Value name="parallel-grain-size">50</Value>
-		<Value name="stop-period">-1</Value>
+		<Value name="stop-period">7</Value>
 		<Value name="restart-period">-1</Value>
 	</Ints>
 	<Doubles>
