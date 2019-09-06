@@ -1,40 +1,40 @@
 <ModelInterfaceBatch>
     <class name="ModelInterface.ModelGUI2.DbViewer">
         <command name="XMLDB Batch File">
+            <scenario name="GCAMOriginal"/>
+            <queryFile>co2EmissNoBio.xml</queryFile>
+            <outFile>../output/FinalRuns/IDBNexus/GCAMOriginal/batchQueryOut/co2EmissNoBio_GCAMOriginal.csv</outFile>
+            <xmldbLocation>../output/FinalRuns/IDBNexus</xmldbLocation>
+            <batchQueryResultsInDifferentSheets>false</batchQueryResultsInDifferentSheets>
+            <batchQueryIncludeCharts>false</batchQueryIncludeCharts>
+            <batchQuerySplitRunsInDifferentSheets>false</batchQuerySplitRunsInDifferentSheets>
+            <batchQueryReplaceResults>true</batchQueryReplaceResults>
+        </command>
+        <command name="XMLDB Batch File">
             <scenario name="Reference"/>
             <queryFile>co2EmissNoBio.xml</queryFile>
-            <outFile>../output/batchQueryOut/Aug06/co2EmissNoBio_Reference.csv</outFile>
-            <xmldbLocation>../output/Aug05/DeepDecarb</xmldbLocation>
+            <outFile>../output/FinalRuns/IDBNexus/Reference/batchQueryOut/co2EmissNoBio_Reference.csv</outFile>
+            <xmldbLocation>../output/FinalRuns/IDBNexus</xmldbLocation>
             <batchQueryResultsInDifferentSheets>false</batchQueryResultsInDifferentSheets>
             <batchQueryIncludeCharts>false</batchQueryIncludeCharts>
             <batchQuerySplitRunsInDifferentSheets>false</batchQuerySplitRunsInDifferentSheets>
             <batchQueryReplaceResults>true</batchQueryReplaceResults>
         </command>
         <command name="XMLDB Batch File">
-            <scenario name="2Mkt_NDC"/>
+            <scenario name="Impacts"/>
             <queryFile>co2EmissNoBio.xml</queryFile>
-            <outFile>../output/batchQueryOut/Aug06/co2EmissNoBio_2Mkt_NDC.csv</outFile>
-            <xmldbLocation>../output/Aug05/DeepDecarb</xmldbLocation>
+            <outFile>../output/FinalRuns/IDBNexus/Impacts/batchQueryOut/co2EmissNoBio_Impacts.csv</outFile>
+            <xmldbLocation>../output/FinalRuns/IDBNexus</xmldbLocation>
             <batchQueryResultsInDifferentSheets>false</batchQueryResultsInDifferentSheets>
             <batchQueryIncludeCharts>false</batchQueryIncludeCharts>
             <batchQuerySplitRunsInDifferentSheets>false</batchQuerySplitRunsInDifferentSheets>
             <batchQueryReplaceResults>true</batchQueryReplaceResults>
         </command>
         <command name="XMLDB Batch File">
-            <scenario name="2Mkt_2DS"/>
+            <scenario name="Policy"/>
             <queryFile>co2EmissNoBio.xml</queryFile>
-            <outFile>../output/batchQueryOut/Aug06/co2EmissNoBio_2Mkt_2DS.csv</outFile>
-            <xmldbLocation>../output/Aug05/DeepDecarb</xmldbLocation>
-            <batchQueryResultsInDifferentSheets>false</batchQueryResultsInDifferentSheets>
-            <batchQueryIncludeCharts>false</batchQueryIncludeCharts>
-            <batchQuerySplitRunsInDifferentSheets>false</batchQuerySplitRunsInDifferentSheets>
-            <batchQueryReplaceResults>true</batchQueryReplaceResults>
-        </command>
-        <command name="XMLDB Batch File">
-            <scenario name="2Mkt_B2DS"/>
-            <queryFile>co2EmissNoBio.xml</queryFile>
-            <outFile>../output/batchQueryOut/Aug06/co2EmissNoBio_2Mkt_B2DS.csv</outFile>
-            <xmldbLocation>../output/Aug05/DeepDecarb</xmldbLocation>
+            <outFile>../output/FinalRuns/IDBNexus/Policy/batchQueryOut/co2EmissNoBio_Policy.csv</outFile>
+            <xmldbLocation>../output/FinalRuns/IDBNexus</xmldbLocation>
             <batchQueryResultsInDifferentSheets>false</batchQueryResultsInDifferentSheets>
             <batchQueryIncludeCharts>false</batchQueryIncludeCharts>
             <batchQuerySplitRunsInDifferentSheets>false</batchQuerySplitRunsInDifferentSheets>
