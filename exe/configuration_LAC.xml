@@ -24,9 +24,7 @@
 		<Value name = "energy_supply">../input/gcamdata/xml/en_supply.xml</Value>
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
 		<Value name = "reduce_gasCC">../input/idb/reference/Colombia_ref_gas_cc_sw_interp.xml</Value>
-		<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>
-		<!--Add electricity_water file that has interpolation functions commented out for Colombia and Uruguay-->
-		<!--<Value name = "electricity_water_nointerp">../input/gcamdata/xml/electricity_water_nointerp.xml</Value>-->
+		<Value name = "LACGlobal_elec_water_base">../input/idb/reference/LACglobal_ref_electricity_water.xml</Value>
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
 		<Value name = "energy_distribution">../input/gcamdata/xml/en_distribution.xml</Value>
@@ -37,7 +35,7 @@
 		<Value name = "fertilizer_energy">../input/gcamdata/xml/en_Fert.xml</Value>
 		<Value name = "hddcdd">../input/gcamdata/xml/HDDCDD_constdd_no_GCM.xml</Value>
 		<Value name = "building">../input/gcamdata/xml/building_det.xml</Value>
-		<Value name = "transportation">../input/gcamdata/xml/transportation_UCD_CORE.xml</Value>
+		<Value name = "LACGlobal">../input/idb/reference/LACglobal_ref_transportation_UCD_CORE.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
 		<Value name = "ag_base">../input/gcamdata/xml/ag_For_Past_bio_base_IRR_MGMT.xml</Value>
@@ -89,7 +87,7 @@
 	</Strings>
 	<Bools>
 		<Value name="CalibrationActive">1</Value>
-		<Value name="BatchMode">0</Value>
+		<Value name="BatchMode">1</Value>
 		<Value name="find-path">0</Value>
 		<Value name="createCostCurve">0</Value>
 		<Value name="debugChecking">0</Value>
