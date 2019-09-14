@@ -3,10 +3,8 @@ This xml file was initially created in notepad, by giving the file a .xml extens
 This file must be referenced in the configuration file of interest, with batch run turned on.
 -->
 <BatchRunner>
-	<ComponentSet name="Policy scenarios">
+	<ComponentSet name="IDBNexusFinal">
 		<!--This will run just the configuration script, i.e. a reference case, without any added policies, unless policies are added there already.-->
-		<FileSet name="GCAMOriginal">
-		</FileSet >
 		<FileSet name="Reference">
 
 		<!--Global files-->
