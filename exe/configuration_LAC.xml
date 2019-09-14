@@ -23,7 +23,7 @@
 		<Value name = "resources">../input/gcamdata/xml/resources.xml</Value>
 		<Value name = "energy_supply">../input/gcamdata/xml/en_supply.xml</Value>
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
-		<Value name = "reduce_gasCC">../input/idb/reference/Colombia_ref_gas_cc_sw_interp.xml</Value>
+		<Value name = "reduce_gasCC">../input/idb/reference/LACglobal_ref_gas_cc_sw_interp.xml</Value>
 		<Value name = "LACGlobal_elec_water_base">../input/idb/reference/LACglobal_ref_electricity_water.xml</Value>
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
