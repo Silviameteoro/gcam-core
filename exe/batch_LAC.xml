@@ -29,6 +29,8 @@ This file must be referenced in the configuration file of interest, with batch r
         <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_industry_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_cement_incelas_gssp2.xml</Value>
         <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_bld_agg_gSSP2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_trn_agg_gSSP2.xml</Value>
+        <Value name = "Uruguay_refPopGDP">../input/idb/reference/Uruguay_refPopGDP_demand_input.xml</Value>
         <!-- Final Energy-->
         <Value name = "Uruguay_refFinalNrg">../input/idb/reference/Uruguay_refFinalNrg.xml</Value>
         <!-- Electricity -->
@@ -41,7 +43,8 @@ This file must be referenced in the configuration file of interest, with batch r
       <Value name = "Uruguay_refWat_ref">../input/idb/reference/Uruguay_refWat_L2072.AgCoef_IrrWaterWdraw_ag_mgmt.xml</Value>
 
 		<!--Argentina-specific files-->
-
+	    <!-- Socio-Economics -->
+		<Value name = "argentina_population_gdp">../input/idb/reference/Argentina_refPop_gSSP2.xml</Value>
 		</FileSet>
 
 		<FileSet name="Impacts">
@@ -55,12 +58,8 @@ This file must be referenced in the configuration file of interest, with batch r
 		<FileSet name="Policy">
 		<!--POLICY FILES-->
 		<!--NDC-->
-                <!--<Value name = "policy">../input/idb/policy/test_constraints_pia_MXCL2AGBRv4.xml</Value>-->
-                <!--<Value name = "policy">../input/idb/policy/test_ghg_link_pxa_MX_BR_ar5_LAar4_AR_CO_sar.xml</Value>-->
-		<!--Protected Land increased to 95% for policy cases (will really only affect policy cases)-->
-                <!--<Value name = "protected land">../input/idb/policy/protected_land_input_2.xml</Value>
-                <Value name = "protected land">../input/idb/policy/protected_land_input_3.xml</Value>-->
-
+                <Value name = "policy">../input/idb/policy/NDC_PIA_constraint_2Markets_2DS.xml</Value>
+                <Value name = "policy link file">../input/idb/policy/ghg_link_pxa_2Markets.xml</Value>
 		</FileSet>
 	</ComponentSet>
 </BatchRunner>

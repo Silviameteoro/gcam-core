@@ -79,7 +79,7 @@
 	
 	</ScenarioComponents>
 	<Strings>
-		<Value name="scenarioName"></Value>
+		<Value name="scenarioName">GCAMOriginal</Value>
 		<Value name="debug-region">Colombia</Value>
 		<Value name="MAGICC-input-dir">../input/magicc/inputs</Value>
 		<Value name="MAGICC-output-dir">../output</Value>
@@ -102,7 +102,7 @@
 		<Value name="carbon-output-start-year">1705</Value>
 		<Value name="climateOutputInterval">5</Value>
 		<Value name="parallel-grain-size">50</Value>
-		<Value name="stop-period">7</Value>
+		<Value name="stop-period">4</Value>
 		<Value name="restart-period">-1</Value>
 	</Ints>
 	<Doubles>
