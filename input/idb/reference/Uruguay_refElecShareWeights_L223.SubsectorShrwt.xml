@@ -133,24 +133,24 @@
                           <to-value>0</to-value>
                         <interpolation-function name="linear"/>
                     </interpolation-rule>
-                    <share-weight year="2015">1</share-weight>
-                    <share-weight year="2020">1</share-weight>
-                    <share-weight year="2025">0.5</share-weight>
-                    <share-weight year="2030">0.5</share-weight>
-                    <share-weight year="2035">0.5</share-weight>
-                    <share-weight year="2040">0.5</share-weight>
-                    <share-weight year="2045">0.5</share-weight>
-                    <share-weight year="2050">0.5</share-weight>
-                    <share-weight year="2055">0.5</share-weight>
-                    <share-weight year="2060">0.5</share-weight>
-                    <share-weight year="2065">0.5</share-weight>
-                    <share-weight year="2070">0.5</share-weight>
-                    <share-weight year="2075">0.5</share-weight>
-                    <share-weight year="2080">0.5</share-weight>
-                    <share-weight year="2085">0.5</share-weight>
-                    <share-weight year="2090">0.5</share-weight>
-					<share-weight year="2095">0.5</share-weight>
-                    <share-weight year="2100">0.5</share-weight>
+                    <share-weight year="2015">0</share-weight>
+                    <share-weight year="2020">0.25</share-weight>
+                    <share-weight year="2025">0.25</share-weight>
+                    <share-weight year="2030">0.25</share-weight>
+                    <share-weight year="2035">0.25</share-weight>
+                    <share-weight year="2040">0.25</share-weight>
+                    <share-weight year="2045">0.25</share-weight>
+                    <share-weight year="2050">0.25</share-weight>
+                    <share-weight year="2055">0.25</share-weight>
+                    <share-weight year="2060">0.25</share-weight>
+                    <share-weight year="2065">0.25</share-weight>
+                    <share-weight year="2070">0.25</share-weight>
+                    <share-weight year="2075">0.25</share-weight>
+                    <share-weight year="2080">0.25</share-weight>
+                    <share-weight year="2085">0.25</share-weight>
+                    <share-weight year="2090">0.25</share-weight>
+					<share-weight year="2095">0.25</share-weight>
+                    <share-weight year="2100">0.25</share-weight>
                 </subsector>
               <subsector name="wind">
 		   <interpolation-rule apply-to="share-weight" delete="1"
@@ -158,7 +158,7 @@
                           <to-value>0</to-value>
                         <interpolation-function name="linear"/>
                     </interpolation-rule>
-                    <share-weight year="2015">1.5</share-weight>
+                    <share-weight year="2015">2</share-weight>
                     <share-weight year="2020">2</share-weight>
                     <share-weight year="2025">2</share-weight>
                     <share-weight year="2030">2</share-weight>
@@ -180,27 +180,27 @@
             <subsector name="biomass">
                 <interpolation-rule apply-to="share-weight" delete="1"
                              from-year="2010" to-year="2015">
-                          <to-value>0.5</to-value>
+                          <to-value>0.25</to-value>
                         <interpolation-function name="linear"/>
                     </interpolation-rule>
-                    <share-weight year="2015">0.5</share-weight>
-                    <share-weight year="2020">0.5</share-weight>
-                    <share-weight year="2025">0.5</share-weight>
-                    <share-weight year="2030">0.5</share-weight>
-                    <share-weight year="2035">0.5</share-weight>
-                    <share-weight year="2040">0.5</share-weight>
-                    <share-weight year="2045">0.5</share-weight>
-                    <share-weight year="2050">0.5</share-weight>
-                    <share-weight year="2055">0.5</share-weight>
-                    <share-weight year="2060">0.5</share-weight>
-                    <share-weight year="2065">0.5</share-weight>
-                    <share-weight year="2070">0.5</share-weight>
-                    <share-weight year="2075">0.5</share-weight>
-                    <share-weight year="2080">0.5</share-weight>
-                    <share-weight year="2085">0.5</share-weight>
-                    <share-weight year="2090">0.5</share-weight>
-		            <share-weight year="2095">0.5</share-weight>
-                    <share-weight year="2100">0.5</share-weight>
+                    <share-weight year="2015">0.25</share-weight>
+                    <share-weight year="2020">0.25</share-weight>
+                    <share-weight year="2025">0.25</share-weight>
+                    <share-weight year="2030">0.25</share-weight>
+                    <share-weight year="2035">0.25</share-weight>
+                    <share-weight year="2040">0.25</share-weight>
+                    <share-weight year="2045">0.25</share-weight>
+                    <share-weight year="2050">0.25</share-weight>
+                    <share-weight year="2055">0.25</share-weight>
+                    <share-weight year="2060">0.25</share-weight>
+                    <share-weight year="2065">0.25</share-weight>
+                    <share-weight year="2070">0.25</share-weight>
+                    <share-weight year="2075">0.25</share-weight>
+                    <share-weight year="2080">0.25</share-weight>
+                    <share-weight year="2085">0.25</share-weight>
+                    <share-weight year="2090">0.25</share-weight>
+		            <share-weight year="2095">0.25</share-weight>
+                    <share-weight year="2100">0.25</share-weight>
                 </subsector>      
             </supplysector>
         </region>

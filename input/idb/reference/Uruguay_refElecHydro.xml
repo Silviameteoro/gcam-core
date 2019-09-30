@@ -6,7 +6,7 @@
                 <subsector name="hydro">
                     <stub-technology name="hydro">
                         <period year="2010">
-                            <fixedOutput>0.0236212236</fixedOutput>
+                            <fixedOutput>0.0311987304</fixedOutput>
                             <share-weight>0</share-weight>
                         </period>
                         <period year="2015">
