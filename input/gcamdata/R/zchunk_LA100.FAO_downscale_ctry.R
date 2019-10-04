@@ -141,7 +141,7 @@ module_aglu_LA100.FAO_downscale_ctry <- function(command, ...) {
     FAO_Fert_Prod_tN_RESOURCESTAT %>%
       gather(key="year",value="value",-cols2ignore) %>%
       mutate(value=as.numeric(value),
-             value=case_when((countries=="Uruguay" & value==0) ~ 1,
+             value=case_when((countries=="Uruguay" & value==0 & year>2000) ~ 1,
                              TRUE ~ value)) %>%
       spread(key="year",value="value") -> FAO_Fert_Prod_tN_RESOURCESTAT
 
