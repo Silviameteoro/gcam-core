@@ -16,6 +16,7 @@
 #' @importFrom stats aggregate
 #' @import dplyr
 #' @importFrom tidyr gather spread
+#' @importFrom dplyr case_when
 #' @author BBL
 module_aglu_LA100.FAO_downscale_ctry <- function(command, ...) {
   if(command == driver.DECLARE_INPUTS) {
@@ -130,6 +131,21 @@ module_aglu_LA100.FAO_downscale_ctry <- function(command, ...) {
     FAO_Fert_Prod_tN_RESOURCESTAT <- aggregate(prod[names(prod) %in% FAO_histyear_cols],
                                                by = as.list(prod[coitel_colnames]),
                                                sum, na.rm = TRUE)
+
+    # Adjust Uruguay Fertilizer production to be a small value so that Uruguay gets a fertilizer price in 2010.
+    # This is because Uruguay consumes fertilizer in 2010 but doesn't produce it
+    # and for some reason GCAM give ag production a 0 cost for fertilizer in 2010 and then in 2015 it gets a fertilizer price.
+    # This increases the cost of producing crops in 2015 only as a result of the new fertilzer price and thus drops production.
+
+    cols2ignore<-names(FAO_Fert_Prod_tN_RESOURCESTAT)[!names(FAO_Fert_Prod_tN_RESOURCESTAT) %in% as.character(c(0:10000))]
+    FAO_Fert_Prod_tN_RESOURCESTAT %>%
+      gather(key="year",value="value",-cols2ignore) %>%
+      mutate(value=as.numeric(value),
+             value=case_when((countries=="Uruguay" & value==0) ~ 1,
+                             TRUE ~ value)) %>%
+      spread(key="year",value="value") -> FAO_Fert_Prod_tN_RESOURCESTAT
+
+
 
     # Some data in an_Stocks are in 1000s of heads instead of just heads; convert them
     # Also remove the units column to be consistent with the other FAO tables.
