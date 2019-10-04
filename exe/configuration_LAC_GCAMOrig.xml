@@ -23,7 +23,7 @@
 		<Value name = "resources">../input/gcamdata/xml/resources.xml</Value>
 		<Value name = "energy_supply">../input/gcamdata/xml/en_supply.xml</Value>
 		<Value name = "energy_transformation">../input/gcamdata/xml/en_transformation.xml</Value>
-		<Value name = "elec_water_base">../input/gcamdata/xml/electricity_water.xml</Value>
+		<Value name = "elec_water_base">../input/idb/original/electricity_water_original.xml</Value>
 		<Value name = "heat">../input/gcamdata/xml/heat.xml</Value>
 		<Value name = "hydrogen">../input/gcamdata/xml/hydrogen.xml</Value>
 		<Value name = "energy_distribution">../input/gcamdata/xml/en_distribution.xml</Value>
@@ -34,7 +34,7 @@
 		<Value name = "fertilizer_energy">../input/gcamdata/xml/en_Fert.xml</Value>
 		<Value name = "hddcdd">../input/gcamdata/xml/HDDCDD_constdd_no_GCM.xml</Value>
 		<Value name = "building">../input/gcamdata/xml/building_det.xml</Value>
-		<Value name = "transportation">../input/gcamdata/xml/transportation_UCD_CORE.xml</Value>
+		<Value name = "transportation">../input/idb/original/transportation_UCD_CORE_original.xml</Value>
 		<Value name = "carbon_content">../input/gcamdata/xml/Ccoef.xml</Value>
 		<Value name = "carbon_storage">../input/gcamdata/xml/Cstorage.xml</Value>
 		<Value name = "ag_base">../input/gcamdata/xml/ag_For_Past_bio_base_IRR_MGMT.xml</Value>
@@ -102,7 +102,7 @@
 		<Value name="carbon-output-start-year">1705</Value>
 		<Value name="climateOutputInterval">5</Value>
 		<Value name="parallel-grain-size">50</Value>
-		<Value name="stop-period">4</Value>
+		<Value name="stop-period">11</Value>
 		<Value name="restart-period">-1</Value>
 	</Ints>
 	<Doubles>

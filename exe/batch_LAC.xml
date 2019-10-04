@@ -49,10 +49,10 @@ This file must be referenced in the configuration file of interest, with batch r
 
 		<FileSet name="Impacts">
 		<!--Climate Impacts Files-->
-      <Value name = "hydro">../input/idb/impacts/Hydro/hydro_impacts_IPSL-CM5A-LR_rcp6p0.xml</Value>
-      <Value name = "water">../input/idb/impacts/Water/runoff_impacts_IPSL-CM5A-LR_rcp6p0.xml</Value>
+      <Value name = "hydro">../input/idb/impacts/Hydro/hydro_impacts_HadGEM2-ES_rcp8p5.xml</Value>
+      <Value name = "water">../input/idb/impacts/Water/runoff_impacts_HadGEM2-ES_rcp8p5.xml</Value>
       <!--<Value name = "water">../input/idb/impacts/Water/water_cc_hadgem_8p5_exp_wg.xml</Value>-->
-      <Value name = "ag">../input/idb/impacts/Ag/ag_prodchange_rcp6p0_ipsl_pdssat_SSP2.xml</Value>
+      <Value name = "ag">../input/idb/impacts/Ag/ag_prodchange_rcp8p5_hadgem2_pdssat_SSP2.xml</Value>
 
 		</FileSet>
 		<FileSet name="Policy">

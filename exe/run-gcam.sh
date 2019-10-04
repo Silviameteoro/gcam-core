@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH -A IDB_nexus
-#SBATCH -t 180
+#SBATCH -t 3000
 #SBATCH -N 1
  
 job=$SLURM_JOB_NAME
